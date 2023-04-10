@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>case_03</title>
+  <style>
+    div{
+      position: absolute;
+      width: 200px;
+      height: 100px;
+      background-color: blue;
+      border-radius: 20px;
+      animation-name: my-keyframes;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+
+    }
+    @keyframes my-keyframes {
+      0% {
+        margin-top: 0;
+        margin-left: 0;
+        background-color: blue;
+        transform: rotate(0deg);
+      }
+      25% {
+        margin-left: 1250px;
+        margin-top: 0;
+        background-color: red;
+        transform: rotate(180deg);
+
+      }
+      50% {
+        margin-left: 1250px;
+        margin-top: 550px;
+        background-color: yellow;
+        transform: rotate(360deg);
+      }
+      75% {
+        margin-top: 550px;
+        margin-left: 0;
+        background-color: hotpink;
+        transform: rotate(180deg);
+      }
+      100% {
+        margin-top: 0;
+        margin-left: 0;
+        background-color: orange;
+        transform: rotate(0deg);
+      }
+    }
+  </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>case-05</title>
+  <style>
+    /*div{*/
+    /*    width: 400px;*/
+    /*    height: 300px;*/
+    /*    border:black solid 5px;*/
+    /*    position: absolute;*/
+    /*    top: 0;*/
+    /*    bottom: 0;*/
+    /*    left: 0;*/
+    /*    right: 0;*/
+    /*    margin: auto;*/
+
+    /*    animation-name: my_animation;*/
+    /*    animation-duration: 10s;*/
+    /*    animation-iteration-count: infinite;*/
+
+    /*}*/
+    /*@keyframes my_animation {*/
+    /*    0%{*/
+    /*       background-image: url("assets/images/slide1.png");*/
+    /*    }*/
+    /*    25%{*/
+    /*        background-image: url("assets/images/slide2.png");*/
+    /*    }*/
+    /*    50%{*/
+    /*        background-image: url("assets/images/slide3.png");*/
+    /*    }*/
+    /*    75%{*/
+    /*        background-image: url("assets/images/slide4.png");*/
+    /*    }*/
+    /*    100%{*/
+    /*        background-image: url("assets/images/slide1.png");*/
+    /*    }*/
+    /*}*/
+    main{
+      width: 400px;
+      height: 300px;
+      border: 1px solid black;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+
+      overflow-x: hidden;
+      overflow-y: hidden;
+
+    }
+    main>section{
+      width: 1600px;
+      height: 300px;
+      border: 1px solid green;
+      display: flex;
+
+      animation-name:my_animation ;
+      animation-iteration-count: infinite;
+      animation-duration: 10s;
+    }
+    main>section>div{
+      width: 400px;
+      height: 300px;
+      border: red 1px solid;
+    }
+    main>section>div:nth-child(1){
+      background-image: url("assets/images/slide1.png");
+    }
+    main>section>div:nth-child(2){
+      background-image: url("assets/images/slide2.png");
+    }
+    main>section>div:nth-child(3){
+      background-image: url("assets/images/slide3.png");
+    } main>section>div:nth-child(4) {
+        background-image: url("assets/images/slide4.png");
+      }
+
+    @keyframes my_animation {
+      0%,20%{
+        transform: translateX(-0%);
+      }
+      25%,45%{
+        transform: translateX(-25%);
+      }
+      50%,70%{
+        transform: translateX(-50%);
+      }
+      75%,95%{
+        transform: translateX(-75%);
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+<main>
+  <section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </section>
+</main>
+
+</body>
+</html>
